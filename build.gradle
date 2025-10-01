@@ -23,7 +23,8 @@ sonar {
         property "sonar.projectKey", "julimon80_Plantilla"
         property "sonar.organization", "juliancasa"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "c19cf9bcb9a08b80e54d105b848bf105caf61968"
+        property "sonar.token", "c19cf9bcb9a08b80e54d105b848bf105caf61968"
+        property "sonar.coverage.exclusions", "**/*"
     }
 }
 
