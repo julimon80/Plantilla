@@ -33,7 +33,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Run Serenity tests
-        run: ./gradlew clean test aggregate --no-daemon
+        run: ./gradlew clean test aggregate -Denvironment=github
 
       - name: Upload Serenity Report
         uses: actions/upload-artifact@v4
