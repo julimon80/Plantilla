@@ -36,10 +36,12 @@ jobs:
         run: ./gradlew clean test aggregate --no-daemon
 
       - name: Upload Serenity Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: serenity-report
           path: target/site/serenity
+          if-no-files-found: error
+          retention-days: 7
 
       - name: Run SonarCloud analysis
         env:
